@@ -1,0 +1,155 @@
+{
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "order/order": [
+      "declarations",
+      {
+        "type": "rule",
+        "selector": "^&::(before|after)"
+      },
+      {
+        "type": "at-rule",
+        "name": "media"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:\\w"
+      },
+      {
+        "type": "rule",
+        "selector": "^."
+      },
+      {
+        "type": "rule",
+        "selector": "^&_"
+      }
+    ],
+    "order/properties-order": [
+      "content",
+      "position",
+      "z-index",
+      "top",
+      "left",
+      "bottom",
+      "right",
+      "width",
+      "height"
+    ],
+    "at-rule-semicolon-newline-after": [
+      "always",
+      {
+        "message": "Каждое @-правило должно быть на новой строке"
+      }
+    ],
+    "block-no-empty": [
+      true,
+      {
+        "message": "Пустых блоков быть не должно"
+      }
+    ],
+    "selector-max-id": [
+      0,
+      {
+        "message": "Нельзя писать стили на индификаторы"
+      }
+    ],
+    "declaration-colon-space-after": [
+      "always",
+      {
+        "message": "Ожидается пробел после двоеточия"
+      }
+    ],
+    "declaration-colon-space-before": [
+      "never",
+      {
+        "message": "Перед двоеточием не нужен пробел"
+      }
+    ],
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "message": "Дублирующиеся правила"
+      }
+    ],
+    "declaration-block-no-shorthand-property-overrides": [
+      true,
+      {
+        "message": "Сокращенная запись перезапишет стили, заданные выше"
+      }
+    ],
+    "declaration-block-semicolon-newline-after": [
+      "always",
+      {
+        "message": "Нужна новая строка после точки с запятой"
+      }
+    ],
+    "declaration-block-single-line-max-declarations": [
+      1,
+      {
+        "message": "На строке должно быть только одно правило"
+      }
+    ],
+    "declaration-block-trailing-semicolon": [
+      "always",
+      {
+        "message": "Каждое правило следует заканчивать точкой с запятой"
+      }
+    ],
+    "declaration-no-important": [
+      true,
+      {
+        "message": "Не следует использовать !important"
+      }
+    ],
+    "selector-max-compound-selectors": [
+      3,
+      {
+        "message": "Не следует использовать больше 3 уровней вложенности"
+      }
+    ],
+    "selector-max-type": [
+      2,
+      {
+        "message": "Не следует использовать больше 2 тега для правил"
+      }
+    ],
+    "indentation": [
+      2,
+      {
+        "message": "Отступы должны быть кратны 2-м пробелам"
+      }
+    ],
+    "length-zero-no-unit": [
+      true,
+      {
+        "message": "Нулевым значениям можно не указывать единицы измерения"
+      }
+    ],
+    "no-duplicate-selectors": [
+      true,
+      {
+        "message": "Не следует дублировать селекторы"
+      }
+    ],
+    "string-quotes": [
+      "single",
+      {
+        "message": "Используйте одинарные кавычки"
+      }
+    ],
+    "value-no-vendor-prefix": [
+      true,
+      {
+        "message": "Не нужно использовать вендорные префиксы"
+      }
+    ],
+    "unit-no-unknown": [
+      true,
+      {
+        "message": "Некорректные единицы измерения"
+      }
+    ]
+  }
+}
