@@ -29,6 +29,7 @@ p, a, span, li, h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   outline: none!important;
+  color: inherit;
 }
 article, aside, footer, header, menu, nav, section {
   display: block; }

@@ -50,7 +50,7 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: { sourceMap: true}
+            options: { sourceMap: true },
           },
           {
             loader: 'postcss-loader',
@@ -58,7 +58,7 @@ module.exports = {
           },
           {
             loader: 'sass-loader',
-            options: { sourceMap: true},
+            options: { sourceMap: true },
           },
         ],
       },
@@ -85,14 +85,13 @@ module.exports = {
       filename: './index.html',
       inject: false,
     }),
-    new CopyWebpackPlugin([
-      {from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}/img`}
-    ]),
+    new CopyWebpackPlugin([{ from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}/img` }]),
   ],
   resolve: {
     alias: {
       '@assets': `${PATHS.src}/assets`,
       '@components': `${PATHS.src}/components`,
+      '@pages': `${PATHS.src}/pages`,
       '@shared': `${PATHS.src}/shared`,
       '@icons': `${PATHS.src}/assets/Icons`,
     },
