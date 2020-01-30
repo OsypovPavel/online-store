@@ -4,6 +4,10 @@ const variables = {
   fontLight: '300',
   fontRegular: '400',
   fontBold: '700',
+  // Font Colors
+  fontGreyHover: '#333333',
+  fontGrey: '#777777',
+  fontGrey2: '#555555',
   // Colors
   green: '#90D285',
   yellow: '#ffdc2c',

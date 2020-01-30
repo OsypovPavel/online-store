@@ -93,6 +93,8 @@ module.exports = {
     alias: {
       '@assets': `${PATHS.src}/assets`,
       '@components': `${PATHS.src}/components`,
+      '@shared': `${PATHS.src}/shared`,
+      '@icons': `${PATHS.src}/assets/Icons`,
     },
   },
 };

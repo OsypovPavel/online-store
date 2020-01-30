@@ -30,6 +30,7 @@ module.exports = {
     'import/prefer-default-export': 0,
     'no-unused-expressions': 0,
     'import/extensions': 0,
+    'no-use-before-define': 0,
     'no-underscore-dangle': [
       'error',
       {
@@ -42,6 +43,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'prettier/prettier': 'error',
     'react/destructuring-assignment': 0,
+    'func-names': 0,
     'react/state-in-constructor': 0,
     'react/no-array-index-key': 0,
     'no-console': 0,
