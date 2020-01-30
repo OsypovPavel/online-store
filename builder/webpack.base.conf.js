@@ -86,7 +86,7 @@ module.exports = {
       inject: false,
     }),
     new CopyWebpackPlugin([
-      // {from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}/img`}
+      {from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}/img`}
     ]),
   ],
   resolve: {

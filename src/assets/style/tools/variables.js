@@ -11,6 +11,7 @@ const variables = {
   // Colors
   green: '#90D285',
   yellow: '#ffdc2c',
+  yellowHover: '#ffda28',
   grey: '#eff0f3',
   lightGrey: '#eff0f3',
   red: '#fb2539',

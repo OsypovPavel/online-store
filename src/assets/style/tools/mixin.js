@@ -1,11 +1,3 @@
-const mainBlock = () => {
-  return `width: 100%;
-  max-width: 1430px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;`;
-};
 const setWidth = (width) => {
   return `
     width: ${width};
@@ -141,12 +133,6 @@ const activeButton = () => {
   }
   `;
 };
-const flex = (justify = 'flex-start', align = 'flex-start', direction = 'row') => {
-  return `display: flex;
-    justify-content: ${justify};
-    align-items: ${align};
-    flex-direction: ${direction};`;
-};
 
 const respondTo = (size, content) => {
   switch (size) {
@@ -184,9 +170,7 @@ export {
   customPlaceholder,
   focusPlaceholder,
   activeButton,
-  flex,
   maxContent,
-  mainBlock,
   textEllipsis,
   transitionElastic,
 };
