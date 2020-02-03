@@ -1,10 +1,5 @@
 import styled from 'styled-components';
-import {
-  simpleIcon,
-  appearanceNone,
-  flexCenter,
-  setSize,
-} from '@assets/style/tools/mixin';
+import { simpleIcon, appearanceNone, flexCenter, setSize } from '@assets/style/tools/mixin';
 import { variables } from '@assets/style/tools/variables';
 import RatingStars from '../RatingStars';
 
@@ -146,7 +141,16 @@ const Styles = {
     align-items: center;
     text-decoration: underline;
     font-size: 13px;
+    cursor: pointer;
+    &:hover {
+      color: ${variables.red};
+      svg path {
+        fill: ${variables.red};
+      }
+    }
     svg {
+      display: inline-block;
+      margin-right: 5px;
       path {
         fill: ${variables.fontGrey};
       }

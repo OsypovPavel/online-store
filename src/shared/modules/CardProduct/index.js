@@ -46,7 +46,10 @@ function CardProduct({
       {withReviews && (
         <Styles.ReviewGroup>
           <Styles.Stars rating={rating} />
-          <Styles.Reviews>{reviews} отзыва</Styles.Reviews>
+          <Styles.Reviews>
+            <Icon name={'Comment'} />
+            <span>{reviews} отзыва</span>
+          </Styles.Reviews>
         </Styles.ReviewGroup>
       )}
     </Styles.Container>
