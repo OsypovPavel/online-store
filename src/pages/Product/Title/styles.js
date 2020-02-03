@@ -3,7 +3,7 @@ import { variables } from '@assets/style/tools/variables';
 import { setHeight, setSize } from '@assets/style/tools/mixin';
 
 const Styles = {
-  Wrap: styled.div`
+  Wrap: styled.section`
     width: 100%;
     display: flex;
     align-items: center;

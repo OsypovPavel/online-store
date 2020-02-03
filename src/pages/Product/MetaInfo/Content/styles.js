@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const Styles = {
-  Wrap: styled.div`
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  Container: styled.div`
+    display: block;
+    flex: 1;
+    margin-right: 40px;
   `,
 };
 export default Styles;

@@ -12,8 +12,11 @@ const variables = {
   green: '#90D285',
   yellow: '#ffdc2c',
   yellowHover: '#ffda28',
+  gold: '#ffdc2c',
+  orange: '#ff8941',
   grey: '#eff0f3',
   lightGrey: '#eff0f3',
   red: '#fb2539',
+  border: '#e9eaeb',
 };
 export { variables };

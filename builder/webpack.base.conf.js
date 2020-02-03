@@ -94,6 +94,7 @@ module.exports = {
       '@pages': `${PATHS.src}/pages`,
       '@shared': `${PATHS.src}/shared`,
       '@icons': `${PATHS.src}/assets/Icons`,
+      '@modules': `${PATHS.src}/shared/modules`,
     },
   },
 };

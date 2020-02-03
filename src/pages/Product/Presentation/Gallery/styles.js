@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-import { setSize, setWidth } from '@assets/style/tools/mixin';
+import { setSize, setWidth, flexCenter } from '@assets/style/tools/mixin';
 import { variables } from '@assets/style/tools/variables';
-import { flexCenter } from '../../../../assets/style/tools/mixin';
 
 const Styles = {
   Wrap: styled.div`
-    ${setWidth('50%')};
-    margin-right: 15px;
+    ${setWidth('49%')};
     display: flex;
     flex-wrap: wrap;
   `,
@@ -20,16 +18,18 @@ const Grid = {
     ${setWidth('142px')};
   `,
   Item: styled.div`
-    ${setSize('100%')};
     border: 1px solid ${(props) => (props.active ? variables.yellow : '#e9eaeb')};
     cursor: pointer;
+    ${setSize('100%')};
+    ${flexCenter()};
     &:hover {
       border-color: ${variables.yellow};
     }
   `,
   Img: styled.img`
     display: block;
-    ${setSize('100%')};
+    max-height: 90%;
+    max-width: 90%;
   `,
 };
 const Picture = {
@@ -40,6 +40,7 @@ const Picture = {
   Img: styled.img`
     display: block;
     max-width: 80%;
+    max-height: 400px;
   `,
 };
 export { Styles, Grid, Picture };

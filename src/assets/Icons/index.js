@@ -13,9 +13,15 @@ import ListLeft from './ListLeft';
 import ListRight from './ListRight';
 import Question from './Question';
 import Steps from './Steps';
+import Comment from './Comment';
+import Share from './Share';
+import ArrowRight from './ArrowRight';
+import ArrowLeft from './ArrowLeft';
 
 const icons = {
   ArrowDown,
+  ArrowRight,
+  ArrowLeft,
   Lock,
   Loupe,
   Garage,
@@ -27,6 +33,8 @@ const icons = {
   ListRight,
   Question,
   Steps,
+  Comment,
+  Share,
 };
 const Icon = (props) => {
   const Specification = icons[props.name];

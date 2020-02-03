@@ -1,18 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Grid } from './styles';
 
-const list = [1, 2, 3, 4, 5];
-
-function GridWrap() {
+function GridWrap({ list, current, onChange }) {
+  const changeEl = (el) => () => {
+    onChange(el);
+  };
   return (
     <Grid.List>
-      {list.map((item) => (
-        <Grid.Item key={`product-presentation-img-${item}`} active={item === 1}>
-          <Grid.Img src={'/assets/img/favicon.ico'} />
+      {list.map((item, index) => (
+        <Grid.Item
+          key={`product-presentation-img-${index}`}
+          active={item === current}
+          onClick={changeEl(item)}>
+          <Grid.Img src={item} />
         </Grid.Item>
       ))}
     </Grid.List>
   );
 }
-
+GridWrap.propTypes = {
+  list: PropTypes.array.isRequired,
+  current: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 export default GridWrap;

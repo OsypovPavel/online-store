@@ -1,13 +1,19 @@
 import React from 'react';
-import Styles from './styles';
 import Gallery from './Gallery';
+import Data from './Data';
+import styled from 'styled-components';
 
-function Presentation() {
+const Container = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+`;
+function Presentation(props) {
   return (
-    <Styles.Wrap>
-      <Gallery />
-    </Styles.Wrap>
+    <Container>
+      <Gallery {...props} />
+      <Data {...props} />
+    </Container>
   );
 }
-
 export default Presentation;

@@ -48,6 +48,7 @@ html {
 body {
   font-family: ${variables.font};
   font-size: 16px;
+  line-height: 1;
   min-width: 340px;
   min-height: 100vh;
   -webkit-box-sizing: border-box;
@@ -85,6 +86,18 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.al{
+  &-start{
+    align-items: flex-start;
+  }
+  &-center{
+    align-items: center;
+  }
 }
 `;
 
